@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Task manager/style.css">
+    <title>Task Manager</title>
+</head>
+<body>
+    <header>
+        <h1>Task Manager</h1>
+    </header>
+    <main>
+        <div class="task-form">
+            <input type="text" id="taskInput" placeholder="Enter a new task...">
+            <select id="prioritySelect">
+                <option value="low">Low Priority</option>
+                <option value="medium">Medium Priority</option>
+                <option value="high">High Priority</option>
+            </select>
+            <input type="datetime-local" id="deadlineInput">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+        <ul id="taskList" class="task-list">
+            <!-- Tasks will be added here dynamically using JavaScript -->
+        </ul>
+    </main>
+   
+    <script src="../Task manager/index.js"></script>
+    <footer>
+        <p>@ Copyright gervaisyameogo17 All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
